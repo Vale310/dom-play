@@ -1,0 +1,84 @@
+/* Play-specific styles */
+
+/* Actor buttons */
+#actor-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+    margin: 1em;
+}
+
+#actor-buttons button {
+    min-height: 44px;
+    padding: 0.5em 1.5em;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1em;
+    border: 2px solid darkcyan;
+    background-color: #fff;
+    color: darkcyan;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+    text-transform: capitalize;
+}
+
+#actor-buttons button:hover {
+    background-color: darkcyan;
+    color: #fff;
+}
+
+#actor-buttons button.active {
+    background-color: darkcyan;
+    color: #fff;
+}
+
+#actor-buttons button.clear-btn {
+    border-color: rgb(95, 95, 95);
+    color: rgb(95, 95, 95);
+}
+
+#actor-buttons button.clear-btn:hover,
+#actor-buttons button.clear-btn.active {
+    background-color: rgb(95, 95, 95);
+    color: #fff;
+}
+
+/* Individual lines */
+.line {
+    padding: 0.5em 1em;
+    margin: 0.25em 1em;
+    border-left: 3px solid transparent;
+    border-radius: 3px;
+    transition: background-color 0.2s, opacity 0.2s, border-color 0.2s;
+}
+
+.line .speaker {
+    font-weight: bold;
+    margin-bottom: 0.25em;
+    text-transform: uppercase;
+    font-size: 0.85em;
+    color: #555;
+}
+
+/* Highlighted state */
+.line.highlighted {
+    background-color: #d4f5f5;
+    border-left-color: darkcyan;
+    font-weight: bold;
+}
+
+.line.highlighted .speaker {
+    color: darkcyan;
+}
+
+/* Dim non-highlighted lines when filtering is active */
+#play.filtering .line:not(.highlighted) {
+    opacity: 0.55;
+}
+
+/* Stage directions */
+.stage-direction {
+    font-style: italic;
+    color: #888;
+    margin: 0.5em 1em;
+}

@@ -1,2 +1,1 @@
-alert("Hello from dom-play.js!");
-      
+/* dom-play.js — play highlighting logic goes here */

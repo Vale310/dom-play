@@ -48,6 +48,7 @@
     padding: 0.5em 1em;
     margin: 0.25em 1em;
     border-left: 3px solid transparent;
+    border-bottom: 1px solid #ddd;
     border-radius: 3px;
     transition: background-color 0.2s, opacity 0.2s, border-color 0.2s;
 }

@@ -20,10 +20,13 @@
      
    <main class="wrapper">
 
+    <p><strong>By Vale310</strong></p>
+
     <div id="actor-buttons"></div>
 
     <section id="play">
       <h2>Hamilton &mdash; &ldquo;Right Hand Man&rdquo; (Washington&rsquo;s Tent)</h2>
+      <p><small>Excerpt from <em>Hamilton: An American Musical</em> by Lin-Manuel Miranda, used for an IT102 class assignment.</small></p>
       <p class="stage-direction">Washington&rsquo;s headquarters. Burr enters.</p>
 
       <div class="line" data-actor="burr">
@@ -199,6 +202,16 @@
         <p>I&rsquo;ll rise above my station, organize<br>your information, &rsquo;til we rise to the<br>occasion of our new nation. Sir!</p>
       </div>
 
+    </section>
+
+    <section id="about">
+      <h2>About This Page</h2>
+
+      <p>Clicking an actor's name highlights all of their lines in the scene. All other lines get dimmed. Clicking Clear resets everything. The page does not reload at any point.</p>
+
+      <p>Each line in the HTML has a data-actor attribute that identifies the speaker. On page load, the script reads all the lines, collects the unique actor names, and generates a button for each one. When a button is clicked, the script loops through every line, checks if the data-actor value matches, and toggles a highlighted class accordingly. Because the actors are discovered from the HTML, adding new actors or lines requires no changes to the JavaScript.</p>
+
+      <p>The CSS controls the visual presentation. The .highlighted class applies a background color and bold text to matching lines. Non-highlighted lines have their opacity reduced to create contrast. The JavaScript only adds and removes classes and does not set any inline styles.</p>
     </section>
 
      <footer>
